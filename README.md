@@ -3,7 +3,7 @@
 
 **QUESTION 1:**
 
-When a contact is created/deleted, make a callout to third paty system https://demo.com and send the contactId.
+When a contact is created/deleted, make a callout to third party system https://demo.com and send the contactId.
 
 **Files to check:** ContactTrigger, ContactCalloutService, ContactCalloutServiceTest, MockHttpResponse
 
@@ -23,7 +23,7 @@ Connect two Salesforce Orgs, say Org_A and Org_B, in such a way that, whenever a
 Write a custom REST API that returns the count of contacts, opportunities, cases associated with an account. 
 AccountID will be passed as input
 
-**Files to check:**
+**Files to check:** AccountSummaryAPI
 
 --------------------------------------------------------------------------------------------------------
 
