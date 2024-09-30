@@ -11,9 +11,11 @@ When a contact is created/deleted, make a callout to third party system https://
 
 **QUESTION 2:**
 
-Connect two Salesforce Orgs, say Org_A and Org_B, in such a way that, whenever a Lead is created, a copy of it should be created in Org_B and when a Lead is updated/ deleted in Org_A, same action must be performed on the corresponding Lead in Org_B
+Connect two Salesforce Orgs, say Org_A and Org_B, in such a way that, whenever a Lead is created, a copy of it should be created in Org_B and when a Lead is updated/ deleted in Org_A, same action must be performed on the corresponding Lead in Org_B.
 
-**Files to check:**
+**Files to check:** LeadSyncTrigger, LeadSyncHandler, LeadSyncService
+
+LeadSyncTrigger triggers the appropriate methods in LeadSyncHandler when a Lead is inserted/updated/deleted in Org A(Source Org). LeadSyncService is the REST Resource in Org B(Target Org) that handles callouts from Org A in order to sync the operations in Leads on Org B.
 
 --------------------------------------------------------------------------------------------------------
 
