@@ -11,7 +11,7 @@ Step 4: Whenever upload is clicked, the file will get saved in the related Oppor
 Step 5: After file upload is successful, the Send button will be enabled. 
 Step 6: If the Send Button is clicked, the uploaded file will be sent to 2nd Org. If Opportunity record absent in the 2nd Org, create the related Opportunity record and then save the file in 2nd Org. 
 
-**Files to check:** 
+**Files to check:** Folder LWC-Q1
 
 --------------------------------------------------------------------------------------------------------
 
@@ -24,7 +24,7 @@ Create a Callout for http://restapi.adequateshop.com/api/Tourist?page=2 and gene
 3. Make a scheduled class for daily 8'oclock
 
 
-**Files to check:** 
+**Files to check:** Folder LWC-Q2
 
 --------------------------------------------------------------------------------------------------------
 
