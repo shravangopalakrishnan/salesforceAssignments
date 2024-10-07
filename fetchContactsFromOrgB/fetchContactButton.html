@@ -1,0 +1,15 @@
+<template>
+    <lightning-button label="Fetch Contacts" onclick={handleFetchContacts}></lightning-button>
+
+    <template if:true={contacts}>
+        <lightning-datatable
+            key-field="Id"
+            data={contacts}
+            columns={columns}
+            hide-checkbox-column="true">
+        </lightning-datatable>
+    </template>
+    <template if:true={error}>
+        <div class="slds-text-color_error">{error}</div>
+    </template>
+</template>
