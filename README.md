@@ -65,3 +65,50 @@ Call Future method from batch class (Using Integration).
 **Files to check:** API-Q5/Task5 Folder: AccountBatch, AccountFutureService, AccountQueueableService, BatchExecutor, AccountBatchTest
 
 Since Future classes cannot be called directly by Batch classes as it is not possible to call an asynchronous class from another asynchronous class, I have used the help of a Queueable class as a liaison between the batch class and future class. The Batch Executor runs the Batch class, which invokes the schedulable class, which in turn calls the future class to create new records.
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+**NEW SET OF QUESTIONS**
+
+
+
+
+
+**QUESTION 1:**
+
+Make a callout to 'https://dog.ceo/api/breeds/image/random' and display the result (including the image) in the UI using LWC
+
+**Files to check:** Folder - DogImageAPI
+
+--------------------------------------------------------------------------------------------------------
+
+**QUESTION 2:**
+
+Make a callout to NEWS API and display only the image and the URL from the response using LWC
+
+**Files to check:** Folder - newsAPI
+
+--------------------------------------------------------------------------------------------------------
+
+**QUESTION 3:**
+
+Consider two Salesforce Orgs - Org_A and Org_B. Write an Apex Class to retreive any newly created User record from Org_A and create a copy of it in Org_B. Schedule this class to run every two hours.
+
+
+**Files to check:** Folder - UserSyncScheduler
+
+--------------------------------------------------------------------------------------------------------
+
+**QUESTION 4:**
+
+Consider two Salesforce Orgs - Org-A and Org_B. In Org_A, create a Lightning Button called "Fetch Contacts". Whenever this button is clicked, write a logic to fetch all the    Contacts from Org_B that are not already in Org_A, i.e., If the Org_B Contact's email address is not present for any of the existing Contacts in Org_A then that Contact should be created in Org_A
+
+**Files to check:** Folder - fetchContactsFromOrgB
+
+--------------------------------------------------------------------------------------------------------
+
+
