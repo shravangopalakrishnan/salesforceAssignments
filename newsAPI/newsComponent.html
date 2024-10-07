@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Latest News">
+        <template if:true={newsItems}>
+            <template for:each={newsItems} for:item="newsItem">
+                <div key={newsItem.url} class="slds-box slds-box_x-small">
+                    <img src={newsItem.imageUrl} alt="News Image" class="news-image"/>
+                    <a href={newsItem.url} target="_blank">Read Article</a>
+                </div>
+            </template>
+        </template>
+        <template if:true={error}>
+            <p>{error}</p>
+        </template>
+    </lightning-card>
+</template>
