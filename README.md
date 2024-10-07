@@ -82,7 +82,7 @@ Since Future classes cannot be called directly by Batch classes as it is not pos
 
 Make a callout to 'https://dog.ceo/api/breeds/image/random' and display the result (including the image) in the UI using LWC
 
-**Files to check:** Folder - DogImageAPI
+**Files to check:** Folder - DogImageAPI (Check DogAPI tab in Org A)
 
 --------------------------------------------------------------------------------------------------------
 
@@ -90,7 +90,7 @@ Make a callout to 'https://dog.ceo/api/breeds/image/random' and display the resu
 
 Make a callout to NEWS API and display only the image and the URL from the response using LWC
 
-**Files to check:** Folder - newsAPI
+**Files to check:** Folder - newsAPI (Check News tab in Org A)
 
 --------------------------------------------------------------------------------------------------------
 
@@ -99,7 +99,7 @@ Make a callout to NEWS API and display only the image and the URL from the respo
 Consider two Salesforce Orgs - Org_A and Org_B. Write an Apex Class to retreive any newly created User record from Org_A and create a copy of it in Org_B. Schedule this class to run every two hours.
 
 
-**Files to check:** Folder - UserSyncScheduler
+**Files to check:** Folder - UserSyncScheduler (Check Apex Jobs from Setup to see the scheduled job that occurs every 2 hours)
 
 --------------------------------------------------------------------------------------------------------
 
@@ -107,7 +107,7 @@ Consider two Salesforce Orgs - Org_A and Org_B. Write an Apex Class to retreive 
 
 Consider two Salesforce Orgs - Org-A and Org_B. In Org_A, create a Lightning Button called "Fetch Contacts". Whenever this button is clicked, write a logic to fetch all the    Contacts from Org_B that are not already in Org_A, i.e., If the Org_B Contact's email address is not present for any of the existing Contacts in Org_A then that Contact should be created in Org_A
 
-**Files to check:** Folder - fetchContactsFromOrgB
+**Files to check:** Folder - fetchContactsFromOrgB (Check any contact record - Fetch Contacts button appears as an element on the page and as a Quick Action)
 
 --------------------------------------------------------------------------------------------------------
 
