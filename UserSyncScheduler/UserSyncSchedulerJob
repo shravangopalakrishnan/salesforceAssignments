@@ -1,0 +1,7 @@
+public class UserSyncSchedulerJob {
+    
+    public static void scheduleUserSync() {
+        String cronExpression = '0 0 0/2 * * ?'; 
+        System.schedule('User Sync Job', cronExpression, new UserSyncScheduler());
+    }
+}
