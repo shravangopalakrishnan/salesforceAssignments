@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Random Dog Image">
+        <div class="slds-m-around_medium">
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading"></lightning-spinner>
+            </template>
+
+            <template if:true={errorMessage}>
+                <div class="slds-text-color_error">{errorMessage}</div>
+            </template>
+
+            <template if:true={dogImageUrl}>
+                <img 
+                    src={dogImageUrl} 
+                    alt="Random Dog Image" 
+                    class="dog-image" 
+                    width="300" 
+                    height="300" 
+                />
+            </template>
+
+            <template if:false={isLoading}>
+                <lightning-button label="Get New Image" onclick={handleGetNewImage}></lightning-button>
+            </template>
+        </div>
+    </lightning-card>
+</template>
