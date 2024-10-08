@@ -152,6 +152,8 @@ Account Data is listed in CSV, upload csv to files and develop code/flow to read
 
 Integrate two SF orgs, to consume Account and it's childs (Contact, Opportunity and Case data) in one callout. (Hint: Use composite API)
 
-**Files to check:** Folder - TwilioWhatsApp
+**Files to check:** Folder - AccountAndChildrenSync
+
+The AccountDataSync apex class makes callouts from Org A  with Composite API and fetches data of a particular Account in Org B according to the Account ID passed. Based on the response received, existence of the account in Org A is checked and the children(Contact, Opportunity and Case data) are upserted(updated or created) accordingly.
 
 --------------------------------------------------------------------------------------------------------
