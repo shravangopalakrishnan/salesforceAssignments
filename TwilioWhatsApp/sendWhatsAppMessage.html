@@ -1,0 +1,18 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base">
+      <div slot="title">
+          Send Message
+      </div>
+      <div>
+       <lightning-input 
+         type="text"
+         label="Enter Message"
+       ></lightning-input>
+        <lightning-button 
+          variant="brand"
+          label="Send Message" 
+          onclick={handleSendMessage} 
+        ></lightning-button>
+      </div>
+    </lightning-card>
+</template>
