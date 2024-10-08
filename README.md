@@ -112,3 +112,46 @@ Consider two Salesforce Orgs - Org-A and Org_B. In Org_A, create a Lightning But
 --------------------------------------------------------------------------------------------------------
 
 
+**QUESTION 5:**
+
+1.) I have to Integrate 2 salesforce orgs through rest api 
+
+2.) In which i have to send the object name through one org and in response i want object schema and soql 
+
+3.) In Another org i find the object name and get its related field with comma seprated make soql and using them and for schema part i have to check its label , type , length and nullability and use all of them in a formate 
+
+string sch = '<' + 'label=' syntax for fetching field label + 'length' =syntax + 'type' = syntax for findinf field type + 'nullability=' syntax for nullability +'>' 
+
+            for sool >>> 
+
+'Select ' + fields with comma seprated + 'from' + Object name 
+
+
+**Files to check:** 
+
+--------------------------------------------------------------------------------------------------------
+
+**QUESTION 6:**
+
+Salesforce Integration with WhatsApp Using Twilio App
+
+**Files to check:** Folder - TwilioWhatsApp
+
+--------------------------------------------------------------------------------------------------------
+
+
+**QUESTION 7:**
+
+Account Data is listed in CSV, upload csv to files and develop code/flow to read file and upload bulk data from file to Salesforce org. (Hint: Use Bulk API)
+
+**Files to check:** Folder - TwilioWhatsApp
+
+--------------------------------------------------------------------------------------------------------
+
+**QUESTION 8:**
+
+Integrate two SF orgs, to consume Account and it's childs (Contact, Opportunity and Case data) in one callout. (Hint: Use composite API)
+
+**Files to check:** Folder - TwilioWhatsApp
+
+--------------------------------------------------------------------------------------------------------
