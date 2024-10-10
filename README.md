@@ -150,7 +150,7 @@ Test class coverage should be above 95%
 - Create test sheet for all the test cases
 - Create test methods for all the test cases.
 
-**Files to check:** 
+**Files to check:** Folder - ContactSequenceNumber. (In Salesforce UI, Click on each Contact to edit/view the Sequence Number.
 
 --------------------------------------------------------------------------------------------------------
 
