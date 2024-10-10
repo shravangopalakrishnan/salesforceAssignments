@@ -1,0 +1,15 @@
+<template>
+    <lightning-combobox
+        label="Select Industry"
+        value={selectedIndustry}
+        placeholder="Select Industry"
+        options={industryOptions}
+        onchange={handleIndustryChange}>
+    </lightning-combobox>
+    <lightning-datatable
+        key-field="Id"
+        data={accounts}
+        columns={columns}
+        onrowaction={handleAccountSelect}>
+    </lightning-datatable>
+</template>
