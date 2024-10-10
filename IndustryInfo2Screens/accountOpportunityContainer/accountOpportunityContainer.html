@@ -1,0 +1,8 @@
+<template>
+    <template if:true={isFirstScreen}>
+        <c-account-list-screen onaccountselect={handleAccountSelect}></c-account-list-screen>
+    </template>
+    <template if:false={isFirstScreen}>
+        <c-opportunity-list-screen account-id={selectedAccountId} onback={handleBack}></c-opportunity-list-screen>
+    </template>
+</template>
