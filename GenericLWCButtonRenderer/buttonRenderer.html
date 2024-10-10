@@ -1,0 +1,14 @@
+<template>
+    <div>
+        <template if:true={buttonNamesArray}>
+            <template for:each={buttonNamesArray} for:item="buttonName" for:index="index">
+                <lightning-button
+                    key={buttonName}
+                    label={buttonName}
+                    data-index={index}
+                    onclick={handleButtonClick}>
+                </lightning-button>
+            </template>
+        </template>
+    </div>
+</template>
