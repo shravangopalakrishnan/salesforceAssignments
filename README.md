@@ -133,7 +133,13 @@ Task8: Create Aura and Lightning Component and pass the information using LMS (L
 
 Its a 2 screen project, At first Screen it will show the combobox that will display all the values from the picklist Industry of Account, based on the selection of industry by end user. It will render the DataTable below that combobox that will list Account Name, Phone Number, Email of the accounts that have industry that user has selected. Once the Account from the table is selected then it will open another screen that will list all the child opportunity(Opportunity name, amount, stage, closed date) of that Account. with a back button in top, as you click on back button they will redirect to first screen.
 
-**Files to check:** 
+**Files to check:** Folder - IndustryInfo2Screens (Check Industry Info App tab in Salesforce UI)
+
+First Screen - Displays a combobox with Industry options. Upon selection of an option, Accounts in that Industry will be displayed below along with the Phone number and Email columns. Along with these, the Accounts would contain a button "View Opportunities" which would take the user to the Second Screen
+
+Second Screen - Upon clicking "View Opportunities" button on the First Screen, this Second Screen displays the Opportunity details of the selected Account, along with its Amount, Stage and Close Date details. Also contains the "Back" button on top to facilitate Navigation back to the First Screen.
+
+
 
 --------------------------------------------------------------------------------------------------------
 
