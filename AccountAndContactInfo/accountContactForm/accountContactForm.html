@@ -1,0 +1,11 @@
+<template>
+    <template if:true={showAccountForm}>
+        <c-account-form onaccountcreated={handleAccountCreated}></c-account-form>
+    </template>
+    <template if:true={showContactForm}>
+        <c-contact-form account-id={accountId} account-name={accountName} oncontactcreated={handleContactCreated}></c-contact-form>
+    </template>
+    <template if:true={showSummaryScreen}>
+        <c-summary-screen account-details={accountDetails} contact-details={contactDetails}></c-summary-screen>
+    </template>
+</template>
