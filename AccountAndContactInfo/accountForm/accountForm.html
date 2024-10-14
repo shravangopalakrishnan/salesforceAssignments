@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Create Account">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Account Name" value={accountName} onchange={handleAccountNameChange} required></lightning-input>
+            <lightning-input label="Phone" value={phone} onchange={handlePhoneChange} type="tel" required></lightning-input>
+            <lightning-input label="Website" value={website} onchange={handleWebsiteChange} required></lightning-input>
+            <lightning-input label="Billing Street" value={billingStreet} onchange={handleBillingStreetChange}></lightning-input>
+            <lightning-input label="Billing City" value={billingCity} onchange={handleBillingCityChange}></lightning-input>
+            <lightning-button label="Next" variant="brand" onclick={handleNext}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
