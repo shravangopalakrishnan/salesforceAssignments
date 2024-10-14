@@ -98,7 +98,13 @@ On third screen display the newly created account and its related contact in sep
 Write Test class for the apex part only . 
 
 
-**Files to check:** 
+**Files to check:** Folder - AccountAndContactInfo (Check Account and Contact tab on Salesforce UI).
+
+First Screen - Accepts input from user to create a new Account. Upon the click of the Next button, the Account gets created and moves to the next Screen.
+
+Second Screen - Accpets input from the user to create a new Contact in the Account that was just created. Rekated Account name is displayed below. Upon the click of the Next button, the Contact gets created and moves to the last Screen.
+
+Summary Screen - Dsiplays the details of the Account and Contact that were just created.
 
 --------------------------------------------------------------------------------------------------------
 
