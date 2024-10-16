@@ -1,0 +1,14 @@
+<template>
+    <lightning-input label="Search Country" onchange={handleSearch} placeholder="Type country name"></lightning-input>
+    <template if:true={countries}>
+        <ul>
+            <template for:each={countries} for:item="country">
+                <li key={country.Id}>
+                    <button class="slds-button slds-button_neutral" data-id={country.Id} onclick={handleSelect}>
+                        {country.Name} ({country.Country_Code__c})
+                    </button>
+                </li>
+            </template>
+        </ul>
+    </template>
+</template>
