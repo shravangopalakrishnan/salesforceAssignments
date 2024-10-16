@@ -1,0 +1,10 @@
+<template>
+    <lightning-input 
+        type="number" 
+        label="Rating" 
+        step="0.01" 
+        onchange={handleRatingChange}>
+    </lightning-input>
+    <lightning-textarea label="Feedback" onchange={handleFeedbackChange}></lightning-textarea>
+    <lightning-button label="Submit Rating" onclick={handleSave}></lightning-button>
+</template>
