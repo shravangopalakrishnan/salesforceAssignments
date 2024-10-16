@@ -1,0 +1,31 @@
+<template>
+    <lightning-progress-indicator current-step={currentStep} type="base">
+        <lightning-progress-step label="Select Country" value="1"></lightning-progress-step>
+        <lightning-progress-step label="View Packages" value="2"></lightning-progress-step>
+        <lightning-progress-step label="Enter Customer Details" value="3"></lightning-progress-step>
+        <lightning-progress-step label="Submit Rating" value="4"></lightning-progress-step>
+    </lightning-progress-indicator>
+
+    <template if:true={showCountrySearch}>
+        <c-country-search oncountryselected={handleCountrySelected}></c-country-search>
+    </template>
+    
+    <template if:true={showPackageDisplay}>
+        <c-package-display country-id={selectedCountryId} onproceedtocustomerdetails={handleProceedToCustomerDetails}></c-package-display>
+    </template>
+
+    <template if:true={showCustomerDetails}>
+        <c-customer-details country-id={selectedCountryId} oncustomersaved={handleCustomerSaved}></c-customer-details>
+    </template>
+
+    <template if:true={showRating}>
+        <c-rating customer-id={savedCustomerId} plan-id={selectedPlanId} country-id={selectedCountryId} onratingsubmitted={handleRatingSubmitted}></c-rating>
+    </template>
+
+    <template if:true={showThankYouScreen}>
+        <div class="slds-text-align_center slds-p-around_large">
+            <h1>Thank You for Your Feedback!</h1>
+            <p>Your feedback has been submitted successfully.</p>
+        </div>
+    </template>
+</template>
