@@ -131,7 +131,12 @@ Task7: Improve rating form for customer with some details as per requirement.
 Task8: Create Aura and Lightning Component and pass the information using LMS (Lightning Message Service) 
 
 
-**Files to check:** 
+**Files to check:** Folder - CountryPackageApp
+
+First Screen - lets the user search for Country. The searchbar autocompletes as the user is typing. Upon selecting a Country, it moves to the Second Screen.
+Second Screen - lets the user select among the available plan/packages for that Country. Upon clicking on the 'Proceed to Booking' button, it proceeds to the Third Screen.
+Third Screen - gets input for Customer Details from the user. Upon Saving, redirects to Fourth Screen.
+Fourth Screen - gets input from User to record their Rating and Feedback for the Plan. Upon Submitting the Rating, it gets recorded as a Rating record with references to the Country and Plan.
 
 --------------------------------------------------------------------------------------------------------
 
