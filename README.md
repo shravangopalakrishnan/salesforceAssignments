@@ -168,7 +168,12 @@ CSV Should include Following fields
 
 Test class coverage should be above 95%
 
-**Files to check:** 
+**Files to check:** Folder - ContactCSVBatchAndScheduler
+
+
+The Batch Class updates the status of contacts that were created yesterday to "Ready For Approval".
+The Scheduler Class constructs the CSV with the expected fields and in the desirable format and sends the email to the specified Email ID.
+The Anonymous code to schedule the class and the CSV that is emailed is attached in the folder.
 
 --------------------------------------------------------------------------------------------------------
 
