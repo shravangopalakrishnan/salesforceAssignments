@@ -1,0 +1,22 @@
+HttpRequest request = new HttpRequest();
+request.setEndpoint('callout:myNamedCred/services/apexrest/ObjectMetadata');
+request.setMethod('POST');
+request.setHeader('Content-Type', 'application/json');
+request.setBody('{"objectName":"Contact"}');
+
+Http http = new Http();
+try {
+    HttpResponse response = http.send(request);
+    System.debug('Status Code: ' + response.getStatusCode());
+    System.debug('Raw Response Body: ' + response.getBody());
+
+    String rawResponseBody = response.getBody();
+    String deserializedFirstLayer = (String) JSON.deserialize(rawResponseBody, String.class);
+
+    Map<String, Object> responseMap = (Map<String, Object>) JSON.deserializeUntyped(deserializedFirstLayer);
+    
+    System.debug('SOQL Query: ' + (String) responseMap.get('soql'));
+    System.debug('Schema Details: ' + (String) responseMap.get('schema'));
+} catch (Exception e) {
+    System.debug('Exception: ' + e.getMessage());
+}
