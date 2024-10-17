@@ -127,7 +127,10 @@ string sch = '<' + 'label=' syntax for fetching field label + 'length' =syntax +
 'Select ' + fields with comma seprated + 'from' + Object name 
 
 
-**Files to check:** 
+**Files to check:**  Folder - SchemaAndSOQLFromTargetOrg
+
+When the REST API Callout is made from the ObjectInfoService class from Source Org, the ObjectMetadataService class from Target Org returns the JSON in a Map format, such that SOQL and Schema of the Object are Keys and the response are their respective values.
+The code to execute from the Anonymous window and the Response is stored in the folder for reference.
 
 --------------------------------------------------------------------------------------------------------
 
