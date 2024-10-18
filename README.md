@@ -47,7 +47,7 @@ Pre-requisite: Create a Number field with API name “Total_Contacts_Count__c”
 
 Write a batch class which will move all the records of A, B & C objects from Contact A to Contact B . 
 
-**Files to check:**
+**Files to check:** Folder - Move&MergeContactsAndHandleObjectAUseCases / Task1
 
 **Task-2**
 
@@ -57,7 +57,7 @@ Create a picklist field- Status [New(default), Completed, Error].
 
 To merge contact records from one field (Contact A) to another field (Contact B) using batch apex method. 
 
-**Files to check:**
+**Files to check:** Folder - Move&MergeContactsAndHandleObjectAUseCases / Task2
 
 **Task-3** 
 
@@ -77,7 +77,7 @@ Check if contact exists for the email id and if not then create a contact record
 
 If the Request Status is Completed for the record created , then for another new record (with same email) the Request Status should be Approved and Checkbox true.
 
-**Files to check:** 
+**Files to check:** Folder - Move&MergeContactsAndHandleObjectAUseCases / Task3
 
 **Task-4** 
 
@@ -99,13 +99,20 @@ Create a Mentee record with only one role.  On Updating action to Find Mentor a 
 
 On being assigned a mentor to a mentee update the status of both the records to Match Found and Match found checkbox true. 
 
-**Files to check:** 
+**Files to check:** Folder - Move&MergeContactsAndHandleObjectAUseCases / Task4
 
 **Task-5** 
 
 Create a Test Class for task-3 & 4. 
 
-**Files to check:** 
+**Files to check:** Folder - Move&MergeContactsAndHandleObjectAUseCases / Task5
+
+
+Task1 - Batch Class takes care of moving Objects A, B and C from Contact A to Contact B. (Check Contact A and B records in Salesforce UI)
+Task2 - Batch Class takes care of merging contacts from one field of Contact A to another field of Contact B. Merged contacts are stored as Merge Contact object records. (Check Merge Contact tab in Salesforce UI)
+Task3 - ObjectATrigger helps in handling duplicated and Request_Status according to the requirements. (Check Object A tab in Salesforce UI)
+Task4 - MentorAssignmentTrigger helps in matching Mentee and Mentor records.
+Task5 - Test class for Task 3 and Task 4. (Check Object A tab in Salesforce UI)
 
 --------------------------------------------------------------------------------------------------------
 
