@@ -1,0 +1,79 @@
+<template>
+    <lightning-card title="Data Load Template">
+        <div>
+            <p>* Required Fields</p>
+        </div>
+        
+        <lightning-combobox
+            label="Select Object*"
+            placeholder="Select an Object"
+            value={selectedObject}
+            options={objectOptions}
+            onchange={handleObjectChange}>
+        </lightning-combobox>
+        
+        <div class="slds-grid slds-m-top_medium">
+            <div class="slds-col slds-p-right_small">
+                <p>Available Fields</p>
+                <lightning-datatable
+                    key-field="id"
+                    data={availableFields}
+                    columns={fieldLabelColumn}
+                    max-row-selection="10"
+                    selected-rows={selectedAvailableFields}
+                    onrowselection={handleAvailableFieldSelection}>
+                </lightning-datatable>
+            </div>
+
+            <div class="slds-col slds-p-around_medium">
+                <lightning-button 
+                    label="Add >>" 
+                    onclick={addFieldsToSelection}>
+                </lightning-button>
+                <lightning-button 
+                    class="slds-m-top_small"
+                    label="<< Remove"
+                    onclick={removeFieldsFromSelection}>
+                </lightning-button>
+            </div>
+
+            <div class="slds-col slds-p-left_small">
+                <p>Selected Fields</p>
+                <lightning-datatable
+                    key-field="id"
+                    data={selectedFields}
+                    columns={fieldLabelColumn}
+                    max-row-selection="10"
+                    selected-rows={selectedSelectedFields}
+                    onrowselection={handleSelectedFieldSelection}>
+                </lightning-datatable>
+            </div>
+        </div>
+
+        <lightning-input
+            class="slds-m-top_medium"
+            label="Template Name*"
+            value={templateName}
+            onchange={handleTemplateNameChange}>
+        </lightning-input>
+
+        <lightning-combobox
+            label="DML Type*"
+            placeholder="Select DML Type"
+            value={selectedDML}
+            options={dmlOptions}
+            onchange={handleDMLChange}>
+        </lightning-combobox>
+
+        <lightning-button
+            class="slds-m-top_medium"
+            label="Create Template"
+            variant="brand"
+            onclick={handleCreateTemplate}>
+        </lightning-button>
+
+        <template if:true={errorMessage}>
+            <p class="slds-text-color_error">{errorMessage}</p>
+        </template>
+    </lightning-card>
+</template>
