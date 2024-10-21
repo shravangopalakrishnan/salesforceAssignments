@@ -73,7 +73,11 @@ validations>>>
 7.) The record in get in approval directly when user click the button
 
 
-**Files to check:** 
+**Files to check:** Folder  - DataLoadTemplateLWC. (Check the Data Load Template tab for Creating a Template, and Data Load Templates tab for viewing the saved records of the object.)
+
+The Data Load Template Screen lets the user select the Object, the fields (from the Available Fields table, once the fields are selected and the Add button is clicked, they appear on the Selected Fields table on the right), the DML Operation and the Template Name.
+After getting through the validations for each field as per the requirements, the Template is saved as a Data Load Template object record, and the user is navigated to the saved record screen upon clicking the "Create Template" button.
+The saved template also gets mailed to the Approvers simultaneously, and once the approval is done, the Status field is updated to Approved or Rejected accordingly. 
 
 --------------------------------------------------------------------------------------------------------
 
