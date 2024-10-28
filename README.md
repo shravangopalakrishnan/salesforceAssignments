@@ -36,7 +36,11 @@ Task-1
 
 Sync two salesforce orgs and perform insertion and update on Contact Object using Named Credentials and auth Provider (without using Triggers). 
 
-**Files to check:**
+**Files to check:** Folder API-Q5/Task1: ContactSyncService, ContactSyncScheduler, ContactSyncRestResource, ContactSyncServiceTest
+
+ContactSyncService class handles the syncing of contacts between Source Org and target Org. When a new contact is created or an existing contact is updated in Org A, the contacts in Org B will be synced accordingly.
+Sync happens with the help of the Scheduler class (ContactSyncScheduler) that schedules the sync for every one hour.
+
 
 Task-2 
 
@@ -46,17 +50,20 @@ On login page, Create a SSO login + Plus username/password flow.
 
 **Files to check:** Login Page of Target Org - Users would find an option to login with Identity Provider (Source Org).
 
+
 Task-3 
 
 Using SOAP API, check for insert, update and delete for account object in an org. 
 
 **Files to check:** Tools such as Postman can be used to make SOAP API callouts to the Account object in the org.
 
+
 Task-4 
 
 Create a Case submission form with google reCAPTCHA and case should be created in salesforce. 
 
 **Files to check:** Visualforces Page - caseSubmissionForm in the Org
+
 
 Task-5 
 
