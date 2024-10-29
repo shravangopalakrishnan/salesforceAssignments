@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <aura:attribute name="countryId" type="String" />
+    <aura:attribute name="planId" type="String" />
+
+    <lightning:messageChannel
+        type="CountryPackageChannel__c"
+        onMessage="{!c.handleMessage}"
+        aura:id="messageChannel"
+    />
+
+    <div>
+        <p>Country ID: {!v.countryId}</p>
+        <p>Plan ID: {!v.planId}</p>
+    </div>
+</aura:component>
