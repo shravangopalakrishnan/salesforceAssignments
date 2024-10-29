@@ -154,7 +154,7 @@ Salesforce Integration with WhatsApp Using Twilio App
 
 Account Data is listed in CSV, upload csv to files and develop code/flow to read file and upload bulk data from file to Salesforce org. (Hint: Use Bulk API)
 
-**Files to check:** Folder - TwilioWhatsApp
+**Files to check:** Folder - AccountCSV
 
 --------------------------------------------------------------------------------------------------------
 
