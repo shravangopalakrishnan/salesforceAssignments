@@ -11,7 +11,7 @@ Step 4: Whenever upload is clicked, the file will get saved in the related Oppor
 Step 5: After file upload is successful, the Send button will be enabled. 
 Step 6: If the Send Button is clicked, the uploaded file will be sent to 2nd Org. If Opportunity record absent in the 2nd Org, create the related Opportunity record and then save the file in 2nd Org. 
 
-**Files to check:** Folder OpportunityFileUploadModal (Click omn any Opportunity record in Org A and you can find the Upload File button on the NavBar)
+**Files to check:** Folder OpportunityFileUploadModal (Click on any Opportunity record in Org A and you can find the Upload File button on the NavBar)
 
 Clicking on Upload File button in any opportunity will open a modal that has two buttons - "Upload" and "Send", out which Send is disabled by default.
 Upload lets the user browse and select files for upload. Upon successful upload of the file, Send button gets enabled.
