@@ -167,3 +167,19 @@ Integrate two SF orgs, to consume Account and it's childs (Contact, Opportunity 
 The AccountDataSync apex class makes callouts from Org A  with Composite API and fetches data of a particular Account in Org B according to the Account ID passed. Based on the response received, existence of the account in Org A is checked and the children(Contact, Opportunity and Case data) are upserted(updated or created) accordingly.
 
 --------------------------------------------------------------------------------------------------------
+
+**QUESTION 9:**
+
+Create UI to upload file on a opportunity record and share the opportunity and file with external app. Both source and destination orgs are salesforce orgs. 
+Step 1: Create 2 Orgs. 
+Step 2: Create a Button on Opportunity Record. The Button should open a Modal. 
+Step 3: The Modal should have 2 buttons: Upload Files, Send. The Send Button is Disabled by Default. 
+Step 4: Whenever upload is clicked, the file will get saved in the related Opportunity record. 
+Step 5: After file upload is successful, the Send button will be enabled. 
+Step 6: If the Send Button is clicked, the uploaded file will be sent to 2nd Org. If Opportunity record absent in the 2nd Org, create the related Opportunity record and then save the file in 2nd Org. 
+
+**Files to check:** Folder OpportunityFileUploadModal (Click on any Opportunity record in Org A and you can find the Upload File button on the NavBar)
+
+Clicking on Upload File button in any opportunity will open a modal that has two buttons - "Upload" and "Send", out which Send is disabled by default.
+Upload lets the user browse and select files for upload. Upon successful upload of the file, Send button gets enabled.
+Clicking the Send button syncs the opportunity snd the uploaded files with Org B. (Checks for existing opportunity in Org B and updates if it exists. If the opportunity does not exist, Creates a new opportunitty with the details same as the one in Org A and uploads the file).
