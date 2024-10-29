@@ -141,6 +141,7 @@ First Screen - lets the user search for Country. The searchbar autocompletes as 
 Second Screen - lets the user select among the available plan/packages for that Country. Upon clicking on the 'Proceed to Booking' button, it proceeds to the Third Screen.
 Third Screen - gets input for Customer Details from the user. Upon Saving, redirects to Fourth Screen.
 Fourth Screen - gets input from User to record their Rating and Feedback for the Plan. Upon Submitting the Rating, it gets recorded as a Rating record with references to the Country and Plan.
+Once the Country and Plan are selected, the user can see the Country ID and Plan ID below, which indicates that the Aura component is enabled and the information between the components is passed using LMS through the message channel CountryPackageChannel.
 
 --------------------------------------------------------------------------------------------------------
 
